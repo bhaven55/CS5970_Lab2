@@ -22,5 +22,15 @@ PRIVATE KEY: 92mXu1zZcK7KUkfYeQtLfu6gwerZFN2GHoHsHFKhPSqS6cxvdjk
 
 Once that is done. We will want to upload the private key in the Bitcoin Core software. We will open up the console by going to Windows and then Clicking on console. Once in the console, type in the command "importprivkey <key> "" false", where <key> is your private key. Once you have that uploaded, send some testnet bitcoins to your address. Once that is done, we will use another function called "getblockchaininfo". When you type that in and press enter it will tell you where you pruned your height. Therefore, we will take that height, for me it was block number 1902678. Then I tpye in the console "rescanblockchain (1902678 2196234)" so it will rescan the blocks from the time I had it pruned. Once the rescan is complete, the bitcoins will show up. From there, you can send the bitcoins to Batman! I have uploaded a few images in the images folder showing bitcoins going to batman from my public key. I have also uploaded a couple images of VS Code and BitCoin Core Software.
   
+
+**IF YOU DOWNLOAD MY CODE AND FILES**
+  
+If you download my code, we will go into the vanityAddress.go file and follow a few steps:
+  
+1) Make sure you click Ctrl+Click on the Find Function and Ctrl+Click on isMatch function, and make sure the functions are updated. If not please updated as described above. Images are also avaible in reference photos directory.
+2) Change the Testnet to true or false depending on if you are trying to create a testnet address or a real address.
+3) Change the string pattern to your liking in the Find function.
+4) Then in terminal type the command "go run ." from the home directory, which contains vanityAddress.go file.
+  
 Thank you!
   Bhaven Patel
